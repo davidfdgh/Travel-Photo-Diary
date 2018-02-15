@@ -6,7 +6,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
-</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+ </head>
 <body>
 		<header class="container">
   		<div class="row">
@@ -17,35 +20,81 @@
                 <p><a href="contact.html">Contact</a></p> 
     			</nav>
   		</div>
-		World traveling, exploring and something more...
+		<p>World traveling, exploring and something more...</p>
 		</header>
-  	<section class="jumbotron">
-			<div class="container">
-        <div class="row text-center">
-        	<h2>Contact informations - David Djukic</h2>
-          <h3>Year's Best Destinations</h3>
-          
-        </div>
-  		</div>
-		</section>
-		<section class="container">
-     	<div class="row">
-			<figure class="col-sm-6">
-					<img src="media/autor.JPG">
-			</figure>
-			<figure class="col-sm-6">
-				<p>If you would like to contact author, please use the following ways:</p>
-				<span class="glyphicon glyphicon-envelope"></span>
-				<p>davidfdgh@gmail.com</p>
-				<span class="glyphicon glyphicon-phone"></span>
-				<p>+381 (0) 64 321 4004</p>
-				<span class="glyphicon glyphicon-new-window"></span>
-				<p><a href="https://github.com/davidfdgh">GitHub/David Djukic</a></p>
+		
+		<div class="container">
+			  <h2>Latest photo album - Spain&Morocco (2017)</h2>
+			  <div id="myCarousel" class="carousel slide">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+				  <li class="item1 active"></li>
+				  <li class="item2"></li>
+				  <li class="item3"></li>
+				  <li class="item4"></li>
+				  <li class="item5"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+
+				  <div class="item active">
+					<img src="media/madrid.JPG" alt="Espana" width="460" height="345">
+					<div class="carousel-caption">
+					  <h3>Madrid</h3>
+					  <p>Almudena Cathedral is a Catholic church in Madrid, Spain. It is the seat of the Roman Catholic Archdiocese of Madrid.</p>
+					</div>
+				  </div>
+					<div class="item">
+						<img src="media/morocco.JPG" alt="Ouarzazate" width="460" height="345">
+						<div class="carousel-caption">
+						  <h3>Ouarzazate</h3>
+						  <p>Ouarzazate is a city south of Morocco’s High Atlas mountains, known as a gateway to the Sahara Desert.</p>
+						</div>
+				  </div>
+				  <div class="item">
+					<img src="media/marrakech.JPG" alt="Morrocco" width="460" height="345">
+					<div class="carousel-caption">
+					  <h3>Marrakech</h3>
+					  <p>Marrakesh, a former imperial city in western Morocco, is a major economic center and home to mosques, palaces and gardens.</p>
+					</div>
+				  </div>
 				
-			</figure>
+				  <div class="item">
+					<img src="media/fez.JPG" alt="Fez" width="460" height="345">
+					<div class="carousel-caption">
+					  <h3>Fez</h3>
+					  <p>Fes is a northeastern Moroccan city often referred to as the country’s cultural capital.</p>
+					</div>
+				  </div>
+
+				  <div class="item">
+					<img src="media/gibraltar.JPG" alt="Gibraltar" width="460" height="345">
+					<div class="carousel-caption">
+					  <h3>Straits of Gibraltar</h3>
+					  <p>In the Middle Ages, Muslims called it Al-Zuqaq, "The Passage", the Romans called it Fretum Gatitanum, and in the ancient world it was known as the "Pillars of Hercules"</p>
+					</div>
+				  </div>
+			  
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" role="button">
+				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button">
+				  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				  <span class="sr-only">Next</span>
+				</a>
+			  </div>
 		</div>
 		
-    </section>
+		
+		
+		
+		
+		
 		<footer class="container">
       <div class="row">
         <p class="col-sm-4">&copy; February 2018 David Djukic</p>
@@ -57,5 +106,7 @@
         </ul>
       </div>
     </footer>
+	
 </body>
+<script src="main.js"></script>
 </html>

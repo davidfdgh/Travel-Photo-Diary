@@ -5,6 +5,8 @@ body {
 
 header {
   padding: 20px 0;
+  background-color: black;
+ 
 }
 
 header .row,
@@ -16,18 +18,35 @@ footer .row {
 header h1 {
   font-weight: 700;
   margin: 0;
+  color: #88E18D;
 }
 
 header nav {
   display: flex;
   justify-content: flex-end;
+  
+}
+ 
+nav a {
+	color: #87B138;
+	font-size: 25px;
+	font-weight: 600;
+	
+	
+}
+
+nav a:hover {
+	color: #C1E977;
+	text-decoration: none;
 }
 
 header p {
   padding: 0 20px;
   margin: 0;
-  font-size: 20px;
-  font-style: italic;
+  font-size: 15px;
+  font-style: ;
+  color: white;
+  
 }
 
 
@@ -88,15 +107,36 @@ section .row img {
   color: #ffffff;
   margin: 0 0 30px;
 }
-
-footer {
-  font-size: 12px;
-  padding: 20px 0;
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+	  
+  }
+#myCarousel {
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
+
+  
+footer {
+  font-size: 15px;
+  
+  padding: 20px 0;
+  background-color: #88E18D;
+  
+  //**background-color: #EECF89;**//
+  
+  }
 
 footer .col-sm-8 {
   display: flex;
   justify-content: flex-end;
+}
+
+footer .col-sm-4 {
+	font-weight: 500;
+	font-style: italic;
 }
 
 footer ul {
