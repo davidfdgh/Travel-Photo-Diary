@@ -6,6 +6,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+  <script src="js/handlebars-v3.0.3.js"></script>
 </head>
 <body>
 	
@@ -35,13 +38,13 @@
      	<div class="row">
 			<figure class="col-sm-6" >	
 				<div class="thumbnail">	
-				<img src="media/prag.JPG" class="img-thumbnail">
+				<img id="myImg" src="media/prag.JPG" class="img-thumbnail">
 				<p>First trip was to the Czech Republic, and beautiful city of Prague (2013)</p>
 				</div>
 			</figure>
 			<figure class="col-sm-6">
 				<div class="thumbnail">	
-					<img src="media/budapest.JPG" class="img-thumbnail">
+					<img id="myImg" src="media/budapest.JPG" class="img-thumbnail">
 					<p>Second, was trip to Hungary. Fisherman's palace, over the blue Danube River. (2014)</p>
 				</div>
 			</figure>
@@ -49,13 +52,13 @@
 		<div class="row"> 
 			<figure class="col-sm-6">
 				<div class="thumbnail">
-					<img src="media/moskva.JPG" class="img-thumbnail">
+					<img id="myImg" src="media/moskva.JPG" class="img-thumbnail">
 					<p>After Budapest, in the next few days I found myself in Russia. (2014)</p>
 				</div>				
 			</figure>
 			<figure class="col-sm-6">
 				<div class="thumbnail">
-					<img src="media/baikal.JPG" class="img-thumbnail">
+					<img id="myImg" src="media/baikal.JPG" class="img-thumbnail">
 					<p>Most of my Russian trip, I spent in the nature. Outstanding Lake Baikal! (2014)</p>
 			  	</div>		  
 			</figure>
@@ -63,13 +66,13 @@
 		<div class="row"> 
 			<figure class="col-sm-6">
 				<div class="thumbnail">
-					<img src="media/mongolia.JPG" class="img-thumbnail">
+					<img id="myImg" src="media/mongolia.JPG" class="img-thumbnail">
 					<p>I couldn't resist to visit, unknown Mongolia. (2014)</p>
 				</div>				
 			</figure>
 			<figure class="col-sm-6">
 				<div class="thumbnail">
-					<img src="media/viena.JPG" class="img-thumbnail">
+					<img id="myImg" src="media/viena.JPG" class="img-thumbnail">
 					<p>Next year, I decided to wander around Central Europe. Vienna (2015)</p>
 				</div>
 			</figure>
@@ -77,13 +80,13 @@
 		<div class="row"> 
 			<figure class="col-sm-6">
 				<div class="thumbnail">
-					<img src="media/kiev.JPG" class="img-thumbnail">
+					<img id="myImg" src="media/kiev.JPG" class="img-thumbnail">
 					<p>By some accident I lost myself in the Ukraine. Kiev (2016)</p>
 				</div>
 			</figure>
 			<figure class="col-sm-6">
 				<div class="thumbnail">
-					<img src="media/knicanin.JPG" class="img-thumbnail">
+					<img id="myImg" src="media/knicanin.JPG" class="img-thumbnail">
 					<p>After travel, sometimes you need to take a deep breath. Uncle Rade (2017)</p>
 				</div>
 			</figure>
@@ -91,13 +94,13 @@
 		<div class="row"> 
 			<figure class="col-sm-6">
 				<div class="thumbnail">
-					<img src="media/madrid.JPG" class="img-thumbnail">
+					<img id="myImg" src="media/madrid.JPG" class="img-thumbnail">
 					<p>Next year, I turn my direction toward West. Madrid (2017)</p>
 				</div>
 			</figure>
 			<figure class="col-sm-6">
 				<div class="thumbnail">
-					<img src="media/morocco.JPG" class="img-thumbnail">
+					<img id="myImg" src="media/morocco.JPG" class="img-thumbnail">
 					<p>And then, crossed the continents. Voila Africa (2017)</p>
 				</div>	
 			</figure>
@@ -105,13 +108,13 @@
 		<div class="row"> 
 			<figure class="col-sm-6">
 				<div class="thumbnail">
-					<img src="media/marrakech.JPG" class="img-thumbnail">
+					<img id="myImg" src="media/marrakech.JPG" class="img-thumbnail">
 					<p>I visited old capital Marrakech. (2017)</p>
 				</div>
 			</figure>
 			<figure class="col-sm-6">
 				<div class="thumbnail">
-					<img src="media/fez.JPG" class="img-thumbnail">
+					<img id="myImg" src="media/fez.JPG" class="img-thumbnail">
 					<p>And then, crossed the Atlas mountains. Fez (2017)</p>
 				</div>
 			</figure>
@@ -119,18 +122,32 @@
 		<div class="row"> 
 			<figure class="col-sm-6">
 				<div class="thumbnail">
-					<img src="media/gibraltar.JPG" class="img-thumbnail">
+					<img id="myImg" src="media/gibraltar.JPG" class="img-thumbnail">
 					<p>But the best was, sailing through the Gibraltar Straits. (2017)</p>
 				</div>
 			</figure>
 			<figure class="col-sm-6">
 				<div class="thumbnail">
-					<img src="media/dead-end.JPG" class="img-thumbnail">
+					<img id="myImg" src="media/dead-end.JPG" class="img-thumbnail">
 					<p>Since then I got stuck in the Serbia :) (2017)</p>
 				</div>
 			</figure>
 		</div>
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+			  
+			  <span class="close">&times;</span>
+
+			  <!-- Modal Content-->
+			  <img class="modal-content" id="img">
+
+			  <!-- Image Text -->
+			  <div id="caption"></div>
+		</div>
+		
     </section>
+	
 		<footer class="container">
       <div class="row">
         <p class="col-sm-4">&copy; February 2018 David Djukic</p>
@@ -143,4 +160,7 @@
       </div>
     </footer>
 </body>
+<script src="js/main.js"></script>
+<script src="js/modal.js"></script>
+	
 </html>
